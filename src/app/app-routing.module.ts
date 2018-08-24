@@ -3,11 +3,15 @@ import { Routes, RouterModule } from '@angular/router';
 import {HomePageComponent} from './componentes/home-page/home-page.component';
 import {LoginPageComponent} from './componentes/login-page/login-page.component';
 import {RegisterPageComponent} from './componentes/register-page/register-page.component';
+import {NoFoundPageComponent} from './componentes/no-found-page/no-found-page.component';
+import {PrivadoPageComponent} from './componentes/privado-page/privado-page.component';
 
 const routes: Routes = [
    {path: '', component: HomePageComponent},
    {path: 'login', component: LoginPageComponent},
-   {path: 'registro', component: RegisterPageComponent}
+   {path: 'registro', component: RegisterPageComponent},
+   {path: 'privado', component: PrivadoPageComponent},
+   {path: '**', component: NoFoundPageComponent }
 ];
 
 @NgModule({
